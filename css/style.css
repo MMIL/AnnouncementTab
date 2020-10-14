@@ -46,19 +46,17 @@ body {
     right: 150px;
 } */
 
-#btn3 {
-    background: #EA79CE;
-    /* border: 1px solid #000000; */
-    border-width: 1px;
-    border-style: solid;
-    border-color: #000000;
+#btn1 {
+     background: #EA79CE; 
+    border-radius: 10px;
+    padding:12px;
 }
 
-#btn1,
-#btn2 {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #000000;
+#btn2,
+#btn3 {
+    
+    border-radius: 10px;
+    padding:12px;
 }
 
 .navbar-brand img {
@@ -93,10 +91,12 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    padding: 0 5px;
-    text-align: center;
+  
     background-color: #EA79CE;
+    border-radius: 10px;
+    padding:12px;
     color: #F5F9FC;
+    
 }
 
 .content {
