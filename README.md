@@ -47,7 +47,13 @@ Content-Length: xy
    ]
 }
 ```
+### Web Design of Announcement Tab:-
 
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/60606998/96366144-5d51ab80-1163-11eb-95ff-5a3ad2b7572d.gif)
+
+### Mobile view of Announcement tab:-
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/60606998/96366292-6727de80-1164-11eb-80e6-d6f8f44efb66.gif)
 
 
 
