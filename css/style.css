@@ -49,14 +49,13 @@ body {
 #btn1 {
      background: #EA79CE; 
     border-radius: 10px;
-    padding:12px;
+    padding:10px;
 }
 
 #btn2,
 #btn3 {
-    
     border-radius: 10px;
-    padding:12px;
+    padding:10px;
 }
 
 .navbar-brand img {
@@ -143,11 +142,36 @@ body {
     font-weight: 20;
 }
 
+
 .posts i {
     background-color: white;
     border-radius: 50%;
     border: 1px solid grey;
     padding: 20px;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.posts i .fa{
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+  }
+  .posts .fa:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+  }
+  .posts .fa-calendar:hover{
+        color: white;
+        background-color: red;
+  }
+  .posts .fa-facebook-official:hover{
+    color: white;
+    background-color: #3b5999;
+}
+.posts .fa-instagram:hover{
+    color: white;
+    background-color:#e4405f;
 }
 
 .r-heading {
@@ -254,9 +278,9 @@ body {
         overflow-x: hidden;
     }
     .navbar-dark .navbar-nav .nav-link {
-        width: 100%;
-        min-width: 100%;
-        max-width: 100%;
+        width: 80%;
+        min-width: 80%;
+        max-width: 80%;
     }
     .content2 {
         padding: 0;
@@ -280,6 +304,7 @@ body {
     }
     #content-3 {
         text-align: center;
+        padding-top: 49px;
     }
     .font2 {
         font-size: 2rem;
@@ -298,7 +323,7 @@ body {
     }
     #content-2 {
         position: absolute;
-        top: 20px;
+        top: 100px;
     }
     .faqs li {
         padding-top: 20px;
