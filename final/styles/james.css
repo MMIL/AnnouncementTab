@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*:link,
+*:visited {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  min-height: 100vh;
+  padding: 50px 75px;
+  background-color: #072540;
+  overflow: hidden;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+nav .list {
+  cursor: pointer;
+}
+
+nav .list-it {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  list-style-type: none;
+  margin: 0 auto 20px;
+}
+
+nav .list .h-log {
+  display: none;
+}
+
+nav .list li {
+  margin: 10px 50px;
+  height: 60px;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+nav .list li:first-child {
+  margin-left: 0;
+}
+
+nav .hb-logo .hb-alone {
+  display: none;
+}
+
+nav .hb-logo img {
+  width: 100%;
+  min-width: 160px;
+  height: auto;
+}
+
+.active {
+  color: #ff8ae2;
+  border-bottom: 8px solid #ff8ae2;
+}
+
+main {
+  margin: 20px 0;
+  width: 60%;
+}
+
+main .head {
+  font-size: 55px;
+  line-height: 65px;
+  font-weight: 900;
+  color: #ff8ae2;
+}
+
+main .btn {
+  margin-top: 75px;
+  position: relative;
+  z-index: 2;
+}
+
+main .btn-gs {
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  border: none;
+  background-color: #ff8ae2;
+  padding: 20px 68px;
+  border-radius: 40px;
+  font-size: 19px;
+}
+
+main .btn-gs:focus {
+  outline: none;
+}
+
+.tt img {
+  width: 45%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#l-list {
+  display: none;
+  position: absolute;
+  text-align: center;
+  list-style-type: none;
+  background-color: #072540;
+  border: 1px solid white;
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+  top: 120px;
+  right: 30px;
+}
+
+#l-list > a > li {
+  padding: 15px;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    font-size: 25px;
+  }
+  main .head {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 870px) {
+  nav {
+    font-size: 20px;
+  }
+  main {
+    width: 65%;
+  }
+  main .head {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  main .btn-gs {
+    padding: 15px 55px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 775px) {
+  nav .list .list-it {
+    display: none;
+  }
+  nav .list .h-log {
+    display: block;
+  }
+  .hb-logo {
+    overflow-x: hidden;
+  }
+  .hb-logo .hb-alone {
+    display: block !important;
+    margin-top: 20px;
+    height: 24px;
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px);
+  }
+  .hb-logo .hb-2020 {
+    display: none;
+    margin: 0;
+  }
+  .tt img {
+    min-width: 350px;
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    width: 100%;
+  }
+  main .head {
+    font-size: 32px;
+    margin-top: 60px;
+  }
+  main .btn-gs {
+    padding: 15px 55px;
+    font-size: 15px;
+  }
+  .btn {
+    margin-top: 45px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 50px 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  main .head {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .btn {
+    margin-top: 35px;
+  }
+}
+/*# sourceMappingURL=james.css.map */
