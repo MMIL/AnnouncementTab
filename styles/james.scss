@@ -1,44 +1,68 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-*,
-*:link,
-*:visited {
+// #0069FF 072540
+body[data-theme="dark"] {
+  --color-1: #ff8ae2;
+  --bg: #072540;
+  --bandw: #000;
+  --wandb: #fff;
+  --gandw: #1a1a1a;
+  --gandb: lightgray;
+  --bgres: url(../assets/img/resource-bg.svg);
+}
+body[data-theme="light"] {
+  --color-1: #0069ff;
+  --bg: #84bdff;
+  --bandw: #fff;
+  --wandb: #000;
+  --gandw: #fff;
+  --gandb: #000;
+  --bgres: url(../assets/img/reslightbg.svg);
+}
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
-  color: white;
 }
 
 body {
   min-height: 100vh;
-  padding: 50px 75px;
-  background-color: #072540;
+  padding: 75px;
+  background-color: var(--bg);
   overflow: hidden;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: var(--white);
   font-size: 30px;
   font-weight: 800;
+
   .list {
+    display: flex;
+    cursor: pointer;
     &-it {
       display: flex;
       width: 100%;
       list-style-type: none;
       margin: 0 auto 20px;
+      color: var(--bandw);
     }
-    cursor: pointer;
     .h-log {
       display: none;
+
+      & img {
+        height: 80px;
+        width: auto;
+      }
     }
 
     li {
       margin: 10px 50px;
       height: 60px;
       min-width: max-content;
+      color: var(--wandb);
 
       &:first-child {
         margin-left: 0;
@@ -56,24 +80,31 @@ nav {
     }
   }
 }
+#m-head {
+  color: var(--wandb);
+  align-self: center;
+  font-size: 32px;
+  display: none;
+}
 
 .active {
-  color: #ff8ae2;
-  border-bottom: 8px solid #ff8ae2;
+  color: var(--color-1) !important;
+  border-bottom: 8px solid var(--color-1);
 }
 
 main {
-  margin: 20px 0;
+  margin: 50px 0 20px;
   width: 60%;
 
   .head {
-    font-size: 55px;
+    font-size: 60px;
     line-height: 65px;
     font-weight: 900;
-    color: #ff8ae2;
+    color: var(--color-1);
+    white-space: nowrap;
   }
   .btn {
-    margin-top: 75px;
+    margin-top: 100px;
     position: relative;
     z-index: 2;
 
@@ -82,10 +113,10 @@ main {
       color: white;
       font-weight: 700;
       border: none;
-      background-color: #ff8ae2;
-      padding: 20px 68px;
+      background-color: var(--color-1);
+      padding: 22px 75px;
       border-radius: 40px;
-      font-size: 19px;
+      font-size: 24px;
 
       &:focus {
         outline: none;
@@ -102,19 +133,22 @@ main {
   }
 }
 #l-list {
-  display: none;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 20px 1fr;
+  grid-gap: 0 10px;
   position: absolute;
-  text-align: center;
+  text-align: left;
   list-style-type: none;
   background-color: #072540;
   border: 1px solid white;
   color: white;
-  font-size: 25px;
-  font-weight: 800;
-  top: 120px;
+  font-size: 16px;
+  font-weight: 600;
+  top: 140px;
   right: 30px;
-  & > a > li {
+  & > * {
     padding: 15px;
+    color: white;
   }
 }
 
@@ -144,9 +178,15 @@ main {
       font-size: 15px;
     }
   }
+  .list {
+    &-it {
+      margin: 0 auto 10px;
+    }
+  }
 }
 @media (max-width: 775px) {
   nav {
+    align-items: center;
     .list {
       .list-it {
         display: none;
@@ -157,12 +197,11 @@ main {
     }
   }
   .hb-logo {
-    overflow-x: hidden;
+    // overflow-x: hidden;
     .hb-alone {
       display: block !important;
-      margin-top: 20px;
       height: 24px;
-      transform: translateX(60px);
+      min-width: max-content;
     }
     .hb-2020 {
       display: none;
@@ -174,12 +213,15 @@ main {
       min-width: 350px;
     }
   }
+  #m-head {
+    display: block;
+  }
 }
 @media (max-width: 650px) {
   main {
     width: 100%;
     .head {
-      font-size: 32px;
+      font-size: 36px;
       margin-top: 60px;
     }
     .btn-gs {
@@ -206,4 +248,43 @@ main {
   .btn {
     margin-top: 35px;
   }
+  body {
+    padding: 30px 15px;
+  }
+  #l-list {
+    top: 100px;
+  }
+  #m-head {
+    font-size: 25px;
+  }
+  nav .list .h-log img {
+    height: 50px;
+  }
+}
+// DARJ MODE BTN d-mode, d-mode-cir
+.d-mode {
+  max-height: 42px;
+  min-width: 70px;
+  margin: 5px 20px 0;
+  border-radius: 50px;
+  background-color: var(--wandb);
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+
+  &-cir {
+    position: relative;
+    min-height: 32px;
+    min-width: 32px;
+    border-radius: 50%;
+    background-color: var(--color-1);
+  }
+  @media (max-width: 775px) {
+    display: none;
+  }
+}
+.m-mode {
+  max-width: 70px;
+  margin: auto;
+  display: flex;
 }

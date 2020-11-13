@@ -1,0 +1,115 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+.res-bg {
+  padding: 75px;
+  background-color: grey;
+  min-height: 100vh;
+  background: repeat var(--bgres);
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 60px 120px;
+  width: 100%;
+  -ms-grid-columns: (minmax(300px, 300px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-ig {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-ig__img img {
+  width: 302px;
+  min-height: 302px;
+}
+
+.card > * {
+  background-color: var(--gandw);
+  color: var(--wandb);
+}
+
+.card .ig-data {
+  padding: 35px;
+}
+
+.card .ig-data__date {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gandb);
+  font-family: "Montserrat", sans-serif;
+  margin: 4px 0 10px;
+}
+
+.card .ig-data__tags {
+  margin: 5px 0;
+}
+
+.card .ig-data__tags > * {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  font-size: 13px;
+  padding: 2px 5px;
+  margin-right: 10px;
+  line-height: 25px;
+}
+
+.card .ig-data__des, .card .ig-data__username, .card .ig-data__link {
+  font-family: "Montserrat", sans-serif;
+  margin: 8px 0;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.card .ig-data__des {
+  height: 80px;
+  overflow-y: hidden;
+}
+
+.card .ig-data__des::-webkit-scrollbar {
+  width: 0.5em;
+  border-radius: 4px;
+}
+
+.card .ig-data__des::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.card .ig-data__des::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: darkgrey;
+}
+
+.card .ig-data__username {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.card .ig-data__link {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .res-bg {
+    padding: 50px 10px;
+  }
+}
+/*# sourceMappingURL=posts.css.map */
