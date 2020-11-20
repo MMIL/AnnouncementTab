@@ -1,0 +1,290 @@
+// #0069FF 072540
+body[data-theme="dark"] {
+  --color-1: #ff8ae2;
+  --bg: #072540;
+  --bandw: #000;
+  --wandb: #fff;
+  --gandw: #1a1a1a;
+  --gandb: lightgray;
+  --bgres: url(../assets/img/resource-bg.svg);
+}
+body[data-theme="light"] {
+  --color-1: #0069ff;
+  --bg: #84bdff;
+  --bandw: #fff;
+  --wandb: #000;
+  --gandw: #fff;
+  --gandb: #000;
+  --bgres: url(../assets/img/reslightbg.svg);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  padding: 75px;
+  background-color: var(--bg);
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 800;
+
+  .list {
+    display: flex;
+    cursor: pointer;
+    &-it {
+      display: flex;
+      width: 100%;
+      list-style-type: none;
+      margin: 0 auto 20px;
+      color: var(--bandw);
+    }
+    .h-log {
+      display: none;
+
+      & img {
+        height: 80px;
+        width: auto;
+      }
+    }
+
+    li {
+      margin: 10px 50px;
+      height: 60px;
+      min-width: max-content;
+      color: var(--wandb);
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .hb-logo {
+    .hb-alone {
+      display: none;
+    }
+    & img {
+      width: 100%;
+      min-width: 160px;
+      height: auto;
+    }
+  }
+}
+#m-head {
+  color: var(--wandb);
+  align-self: center;
+  font-size: 32px;
+  display: none;
+}
+
+.active {
+  color: var(--color-1) !important;
+  border-bottom: 8px solid var(--color-1);
+}
+
+main {
+  margin: 50px 0 20px;
+  width: 60%;
+
+  .head {
+    font-size: 60px;
+    line-height: 65px;
+    font-weight: 900;
+    color: var(--color-1);
+    white-space: nowrap;
+  }
+  .btn {
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+
+    &-gs {
+      cursor: pointer;
+      color: white;
+      font-weight: 700;
+      border: none;
+      background-color: var(--color-1);
+      padding: 22px 75px;
+      border-radius: 40px;
+      font-size: 24px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+.tt {
+  & img {
+    width: 45%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+}
+#l-list {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 20px 1fr;
+  grid-gap: 0 10px;
+  position: absolute;
+  text-align: left;
+  list-style-type: none;
+  background-color: #072540;
+  border: 1px solid white;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  top: 140px;
+  right: 30px;
+  & > * {
+    padding: 15px;
+    color: white;
+  }
+}
+
+//MEDIA QUERIES
+@media (max-width: 1000px) {
+  nav {
+    font-size: 25px;
+  }
+  main {
+    .head {
+      font-size: 50px;
+    }
+  }
+}
+@media (max-width: 870px) {
+  nav {
+    font-size: 20px;
+  }
+  main {
+    width: 65%;
+    .head {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    .btn-gs {
+      padding: 15px 55px;
+      font-size: 15px;
+    }
+  }
+  .list {
+    &-it {
+      margin: 0 auto 10px;
+    }
+  }
+}
+@media (max-width: 775px) {
+  nav {
+    align-items: center;
+    .list {
+      .list-it {
+        display: none;
+      }
+      .h-log {
+        display: block;
+      }
+    }
+  }
+  .hb-logo {
+    // overflow-x: hidden;
+    .hb-alone {
+      display: block !important;
+      height: 24px;
+      min-width: max-content;
+    }
+    .hb-2020 {
+      display: none;
+      margin: 0;
+    }
+  }
+  .tt {
+    img {
+      min-width: 350px;
+    }
+  }
+  #m-head {
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  main {
+    width: 100%;
+    .head {
+      font-size: 36px;
+      margin-top: 60px;
+    }
+    .btn-gs {
+      padding: 15px 55px;
+      font-size: 15px;
+    }
+  }
+  .btn {
+    margin-top: 45px;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    padding: 50px 30px;
+  }
+}
+@media (max-width: 500px) {
+  main {
+    .head {
+      font-size: 28px;
+      line-height: 35px;
+    }
+  }
+  .btn {
+    margin-top: 35px;
+  }
+  body {
+    padding: 30px 15px;
+  }
+  #l-list {
+    top: 100px;
+  }
+  #m-head {
+    font-size: 25px;
+  }
+  nav .list .h-log img {
+    height: 50px;
+  }
+}
+// DARJ MODE BTN d-mode, d-mode-cir
+.d-mode {
+  max-height: 42px;
+  min-width: 70px;
+  margin: 5px 20px 0;
+  border-radius: 50px;
+  background-color: var(--wandb);
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+
+  &-cir {
+    position: relative;
+    min-height: 32px;
+    min-width: 32px;
+    border-radius: 50%;
+    background-color: var(--color-1);
+  }
+  @media (max-width: 775px) {
+    display: none;
+  }
+}
+.m-mode {
+  max-width: 70px;
+  margin: auto;
+  display: flex;
+}

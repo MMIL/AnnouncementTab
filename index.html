@@ -1,247 +1,75 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tab</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0e293e" />
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <title>Announcement Tab</title>
 </head>
 
-<body>
-    <!--start of nav bar-->
-    <nav class="navbar navbar-expand-md navbar-dark">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav">
-                <li class="content1 nav-item">
-                    <a id="btn1" onclick="openContact()" class=" nav-link l11 mt-1" href="#client">HOME</a>
-                </li>
-                <li class="content2 nav-item">
-                    <a id="btn2" onclick="openResources()" class="nav-link l11 mt-1" href="#home">Resources</a>
-                </li>
-                <li class="content3 nav-item">
-                    <a id="btn3" onclick="openFAQ()" class=" nav-link l11 mt-1" href="#course">FAQ</a>
-              </li>
-            </ul>
+<body data-theme="dark">
+    <nav>
+        <div class="list">
+            <div class="h-log">
+                <img class="min-logo" src="./assets/img/h.svg" alt="">
+            </div>
+            <div class="list-it">
+                <a href="">
+                    <li class="active">Home</li>
+                </a>
+                <a href="./posts.html">
+                    <li>Resources</li>
+                </a>
+                <a href="">
+                    <li>Contact Us</li>
+                </a>
+            </div>
+            <div class="d-mode">
+                <span class="d-mode-cir"></span>
+            </div>
         </div>
-        <a class="navbar-brand ml-auto" href="#"><img src="img/logo.png" alt="logo"></a>
+        <div id="m-head">
+            Home
+        </div>
+        <div class="hb-logo">
+            <img class="hb-2020" src="./assets/img/hb_logo.svg" alt="hacktober 2020 logo">
+            <img class="hb-alone" id="ham" src="./assets/img/ham.svg" alt="hamburger icon">
+        </div>
     </nav>
-    <!--end of nav bar-->
-    <div class="container">
-        <div id="content-1" class="content content11">
-            <div class="row">
-                <div class="col">
-                    <h1 class="r-heading text-center">Resources</h1>
-                    <div class="heading-underline"></div>
-                </div>
-            </div>
-            <div class="resource-content">
-                <div class="row">
-                    <div class="res-panels col-md-3">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                    </div>
-                    <div class=" col-md-1"></div>
-                    <div class="res-panels col-md-3">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                    </div>
-                    <div class=" col-md-1"></div>
-                    <div class="res-panels col-md-3">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="res-panels col-md-3">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                    </div>
-                    <div class=" col-md-1"></div>
-                    <div class="res-panels col-md-3">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                    </div>
-                    <div class=" col-md-1"></div>
-                    <div class="res-panels col-md-3">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="res-panels col-md-3">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                    </div>
-                    <div class=" col-md-1"></div>
-                    <div class="res-panels col-md-3">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                    </div>
-                    <div class=" col-md-1"></div>
-                    <div class="res-panels col-md-3">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row text-center">
-                <div class="col">
-                </div>
-            </div>
+    <main>
+        <div class="head">
+            Real-time Information <br> and Resources <br> for Hacktoberfest
         </div>
-
-        <!--Start of Div for FAQ  -->
-        <div id="content-2" class="content content12">
-            <div class="row">
-                <div class="col">
-                    <header>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col text-left faq-heading">
-                                    <h1 class="display-4 pt-4 text-light mb-0 "><strong>FAQs</strong></h1>
-                                    <!-- <div class="heading-underline"></div> -->
-                                    <div class="title-underline1 bg-light"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </header>
-                    <section id="description" class="text-light py-5 size text-left pb-2 padd">
-                        <ul class="faqs" type="disc">
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laboriosam pariatur, cum ea fuga nesciunt facere veritatis tenetur a sit!</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laboriosam pariatur, cum ea fuga nesciunt facere veritatis tenetur a sit, maxime amet ratione reiciendis veniam aut laborum magni molestias molestiae!</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laboriosam pariatur, cum ea fuga nesciunt facere veritatis tenetur a sit, maxime amet ratione reiciendis.</li>
-                        </ul>
-                    </section>
-                    <section id="footer">
-                        <div class="row ">
-                            <div class="col text-left">
-                                <h2 class="head-faq text-center">ContactUs</h2>
-                                <div class="heading-underline"></div>
-                            </div>
-                        </div>
-                        <div class="row foot text-center justify-content-center">
-                            <div class="col-md-3">
-                                <i class="fa fa-envelope-o fa-2x" data-fa-transform="shrink-3 up-4" aria-hidden="true"></i>
-                                <h4 style="color:#F5F9Fc;">Mail Us:</h4>
-                                <p style="color:#F5F9Fc;">abc@abc.com</p>
-                            </div>
-                            <div class="col-md-3">
-                                <i class="fa fa-phone fa-2x" data-fa-transform="shrink-3 up-4" aria-hidden="true"></i>
-                                <h4 style="color:#F5F9Fc;">Contact Us:</h4>
-                                <p style="color:#F5F9Fc;">+91 88XXXXXXX</p>
-                            </div>
-                            <div class="col-md-3">
-                                <i class="fa fa-map-marker fa-2x" data-fa-transform="shrink-3 up-4" aria-hidden="true"></i>
-                                <h4 style="color:#F5F9Fc;">Visit us:</h4>
-                                <p style="color:#F5F9Fc;">JSS Academy Of Technical Education, Noida</p>
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
-            </div>
+        <div class="btn">
+            <a href="./posts.html">
+                <button class="btn-gs">
+                    Get Started
+                </button>
+            </a>
         </div>
-        <!-- end of Div for FAQ -->
-        <div id="content-3" class="content content13">
-            <div class="row">
-                <div class="heading col-md-5">
-                    <h1>Real-time Information and Resources for Hacktoberfest</h1>
-                </div>
-            </div>
-            <div class="posts row">
-                <div class=" col-md-9">
-                    <div class="row row-content">
-                      <div class="col-md-1"><a href="Events and FAQ Webpage/events.html"><span class="circle1 text-center"><i  class="fa fa-calendar fa-1x" aria-hidden="true"></i></span></a></div>
-                      <div class="col-md-1"><a href="Events and FAQ Webpage/events.html"><span class="font1"><span class="font2">Popular</span><br><b>Events</b></span>
-                        </a>
-                        </div>
-                        <div class="col-md-1 icon-space"></div>
-                        <div class="col-md-1"><span class="circle1 text-center"><i class="fa fa-facebook-official fa-1x" aria-hidden="true"></i></span></div>
-                        <div class="col-md-1"><span class="font1"><span class="font2">Facebook</span><br><b>Posts</b></span>
-                        </div>
-                        <div class="col-md-1 icon-space"></div>
-                        <div class="col-md-1"><span class="circle1 text-center"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i></span></div>
-                        <div class="col-md-1"><span class="font1"><span class="font2">Instagram</span><br><b>Posts</b></span>
-                        </div>
-                        <div class="col-md-1"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    </main>
+    <div class="tt">
+        <img class="tt-img" src="./assets/img/tt.svg" alt="">
     </div>
-
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
-    </script>
-    <script>
-        var content1 = document.getElementById("content-1"); //btn1-resources
-        var content2 = document.getElementById("content-2"); //btn2-faq
-        var content3 = document.getElementById("content-3"); //btn3-home
-        var btn1 = document.getElementById("btn1");
-        var btn2 = document.getElementById("btn2");
-        var btn3 = document.getElementById("btn3");
-        var b = document.body;
-
-        function openContact() {
-            content1.style.transform = "translateX(1000%)";
-            content2.style.transform = "translateX(1000%)";
-            content3.style.transform = "translateX(0)";
-            btn1.style.backgroundColor = "#EA79CE";
-            btn2.style.backgroundColor = "transparent";
-            btn3.style.backgroundColor = "transparent";
-            content1.style.transitionDelay = "0s";
-            content2.style.transitionDelay = "0s";
-            content3.style.transitionDelay = "0.3s";
-            b.style.overflowY = "hidden";
-        }
-
-        function openResources() {
-            content1.style.transform = "translateX(0)";
-            content2.style.transform = "translateX(1000%)";
-            content3.style.transform = "translateX(1000%)";
-            btn1.style.backgroundColor = "transparent";
-            btn2.style.backgroundColor = "#EA79CE";
-            btn3.style.backgroundColor = "transparent";
-            content1.style.transitionDelay = "0.3s";
-            content2.style.transitionDelay = "0s";
-            content3.style.transitionDelay = "0s";
-            b.style.overflowY = "scroll";
-
-        }
-
-        function openFAQ() {
-            content1.style.transform = "translateX(1000%)";
-            content2.style.transform = "translateX(0%)";
-            content3.style.transform = "translateX(1000%)";
-            btn1.style.backgroundColor = "transparent";
-            btn2.style.backgroundColor = "transparent";
-            btn3.style.backgroundColor = "#EA79CE";
-            content1.style.transitionDelay = "0s";
-            content2.style.transitionDelay = "0.3s";
-            content3.style.transitionDelay = "0s";
-            b.style.overflowY = "hidden";
-        }
-    </script>
+    <!-- Option -->
+    <div id="l-list" class="list-it">
+        <i class="fa fa-home"></i> <a href="index.html"> Home</a>
+        <i class="fa fa-question"></i> <a href="posts.html"> Resources</a>
+        <i class="fa fa-phone"></i> <a href="/"> Contact Us</a>
+        <i id="ms" class="fa fa-sun"></i> <span id="cd-th" href="">Light Mode</span>
+        <!-- fa fa-moon -->
+    </div>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./scripts/index.js"></script>
 
 </html>

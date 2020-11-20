@@ -1,3 +1,0 @@
-Anmol Puri
-  Added UI
-  Link- https://www.figma.com/file/HW9S5oZo1BhLFYdnrqUtBy/Hacktoberfest_Announcement
